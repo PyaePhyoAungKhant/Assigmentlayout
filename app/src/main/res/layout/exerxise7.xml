@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/ex7btn1"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        app:layout_constraintHorizontal_weight="2"
+        android:background="#18ABBC"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ex7txt1"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/ex7txt1"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        app:layout_constraintHorizontal_weight="8"
+        android:text="Order Detial"
+        android:background="#18ABBC"
+        android:textColor="#FFFFFF"
+        android:paddingTop="10dp"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@id/ex7btn1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/ex7txt2"
+        android:layout_width="0dp"
+        android:text="Order Number : 1245783"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ex7txt1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <Button
+        android:id="@+id/ex7btn2"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:text="Special request"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boderwithradius"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ex7txt1"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ex7cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_marginStart="10dp"
+        android:background="#3F51B5"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/ex7txt2"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="105,2000 KS"
+                android:textSize="25sp"
+                android:textColor="#FF0000"
+                android:layout_marginStart="20dp"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:text="DELIVERED"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order date-19/9/1990"
+                android:layout_marginStart="20dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Item :4"
+                android:layout_marginStart="20dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Changes"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Applied Coupon Code"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#000000"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Details"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="20dp"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Grandma Home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Russia, S.petersburg"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="196048 RU"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milionnaya Street 29,flat 10"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": 2500KS"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#FF0606"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": FG-22322345"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#FF0606"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": 20%(20410KS)"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#FF0606"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BANK TRANSFER"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#FF0606"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ex7cardview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ex7cardview1"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/iphone11"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iphone 11Plus"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Gold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="QTY :1"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9800000KS"
+                android:textColor="#000000"
+                android:layout_marginStart="40dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ex7cardview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ex7cardview2"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/blender"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blender N41015"
+                    android:textColor="#000000"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Panasonic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="QTY :1"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9800000KS"
+                android:textColor="#000000"
+                android:layout_marginStart="25dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ex7cardview3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:paddingRight="220dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Information"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
